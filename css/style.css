@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #6E5494;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../img/background.jpg') no-repeat;
+    background-size: cover;
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+}
+
+#sunsesh {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 1rem;
+    position: absolute;
+    width: 33%;
+    right: 3%;
+    top: 3%;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#sunsesh h1 span {
+    font-size: 0.2em;
+    position: relative;
+    bottom: 18px;
+}
+
+#sunsesh a {
+    display: inline-block;
+    text-decoration: none;
+    color: #6E5494;
+    padding: 0.5rem;
+    font-size: 1.5em;
+}
+
+#sunsesh a:hover {
+    -webkit-transition: .6s color;
+    transition: .6s color;
+    color: #BD2C00;
+}
+
+@media screen and (max-width: 800px) {
+    /*html {*/
+        /*background: url('../img/background.jpg') no-repeat;*/
+    /*}*/
+
+    /*#bgvid {*/
+        /*display: none;*/
+    /*}*/
+
+    #sunsesh {
+        width: 100%;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 0;
+        font-size: 1.2rem;
+    }
+}
